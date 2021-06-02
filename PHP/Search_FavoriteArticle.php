@@ -30,7 +30,7 @@
 		echo $json; 
 
 	} else {
-        echo "SQL¹® Ã³¸®Áß ¿¡·¯ ¹ß»ý : ";
+        echo "SQLë¬¸ ì²˜ë¦¬ì¤‘ ì—ëŸ¬ ë°œìƒ : ";
         echo mysqli_error($con);
     }
 

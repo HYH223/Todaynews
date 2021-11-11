@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:background="#00ff0000"
+            android:src="@android:drawable/ic_menu_revert" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="매물정보"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:background="#00ff0000"
+                android:text="방 계약"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:scaleType="centerInside">
+
+            <ImageView
+                android:id="@+id/iv_1"
+                android:layout_width="400dp"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/presence_offline" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="상세 정보"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="주소:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="면적:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="옵션:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="양도기한:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세 내용:"
+                    android:textSize="18sp"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

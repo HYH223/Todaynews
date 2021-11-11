@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".info">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="105dp"
+                android:layout_height="50dp"
+                android:background="#00ff0000"
+                android:src="@android:drawable/ic_menu_revert" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="매물등록"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/contract"
+                    android:layout_width="105dp"
+                    android:layout_height="50dp"
+                    android:background="#00ff0000"
+                    android:textColor="#000000"
+                    android:text="방 등록" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@android:drawable/presence_offline"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toTopOf="@+id/btn_camera"
+                        app:layout_constraintVertical_bias="0.505" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="주소:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="50"
+                        android:hint="도로명 주소를 입력하세요." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="면적:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:hint="면적을 입력하세요." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="옵션:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_opt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="50"
+                        android:hint="옵션을 입력하세요." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="양도기간:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_perFi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:hint="20201123" />
+
+                    <EditText
+                        android:id="@+id/et_perSe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:hint="20201223" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="가격:"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_pri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:hint="가격을 입력하세요." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="메모:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_memo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:maxLength="50"
+                        android:hint="메모를 입력하세요." />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btn_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="카메라 사진 찍기"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/btn_album" />
+
+                    <Button
+                        android:id="@+id/btn_album"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="앨범에서 선택하기"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/btn_camera"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </LinearLayout>
+                    <Button
+                        android:id="@+id/upload"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="서버에\n업로드"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
